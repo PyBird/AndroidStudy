@@ -7,6 +7,17 @@
               android:orientation="vertical"
     tools:context="com.chenzy.demo.MainActivity">
 
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="none">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+
     <com.czy.zydownloading.ZYDownloading
         android:id="@+id/acd_zydownloading"
         android:layout_width="match_parent"
@@ -15,6 +26,14 @@
     
     <com.chenzy.demo.TestView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="#6db3ff"/>
+    
+    <!--<com.chenzy.demo.QuadToView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="300dp"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
 </LinearLayout>

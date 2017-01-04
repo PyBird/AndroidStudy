@@ -16,9 +16,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        setContentView(new QuadToView(this));
         setContentView(R.layout.activity_main);
-        zyDownloading = (ZYDownloading) findViewById(R.id.acd_zydownloading);
-        zyDownloading.setOnClickListener(this);
+//        zyDownloading = (ZYDownloading) findViewById(R.id.acd_zydownloading);
+//        zyDownloading.setOnClickListener(this);
     }
 
     @Override
