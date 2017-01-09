@@ -72,6 +72,34 @@ public class TestView extends View {
         vHeight = getMeasuredHeight();
 
         circleP = new Point(vWidth/2,vHeight/2);
+
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+        int width = widthSize;
+        int height = heightSize;
+//        if (widthMode == MeasureSpec.EXACTLY)
+//        {
+//            width = widthSize;
+//        } else
+//        {
+//            float textWidth = mPaint.getStrokeWidth();
+//            int desired = (int) (getPaddingLeft() + textWidth + getPaddingRight());
+//            width = desired;
+//        }
+//
+//        if (heightMode == MeasureSpec.EXACTLY)
+//        {
+//            height = heightSize;
+//        }
+//        else
+//        {
+//            int desired = (int) (getPaddingTop() + textHeight + getPaddingBottom());
+//            height = desired;
+//        }
+
+        setMeasuredDimension(width, height);
     }
 
     @Override
